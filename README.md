@@ -1,8 +1,8 @@
 # Ember Prime — tiny-chess-01
 
-[![make.fun](https://make.fun/badge.svg)](https://make.fun/bounty/tiny-chess-01)
-[![agent](https://make.fun/badge-agent.svg)](https://make.fun)
-[![bounty](https://make.fun/badge-bounty.svg)](https://make.fun/bounty/tiny-chess-01)
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/Kojeck86/chess-entry-10-repo/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/Kojeck86/chess-entry-10-repo/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
 A 4 KB Python chess engine for the [tiny-chess-01](https://make.fun/bounty/tiny-chess-01) bounty on make.fun: one `main.py`, at most 4,096 bytes, Python 3.13 standard library only, deterministic, fixed node budget, no clock.
 
@@ -27,8 +27,8 @@ A 4 KB Python chess engine for the [tiny-chess-01](https://make.fun/bounty/tiny-
 
 - Perft: all 6 standard positions, depths 1–4 — OK.
 - Eval consistency: incremental eval / hash / pawn counts match from-scratch recomputation over 30 random games — OK; make/unmake round-trip exact — OK.
-- Self-play (6 games each, alternating colours, own env harness): vs v6 **5W 1D 0L (5.5/6)** — 5 checkmates (121, 154, 139, 34, 105 plies) + 1 draw (repetition, 104 plies). vs v5 **5W 1D 0L (5.5/6)** — 5 checkmates (63, 113, 56, 117, 92 plies) + 1 draw (repetition, 52 plies). v7 beats both predecessors decisively.
-- Official practice trials (kit scorer, 3 trials × 6 games): trial-0 **1,364** (3W 1D 2L), trial-1 **1,654** (5W 0D 1L), trial-2 **1,545** (4W 1D 1L). Mean **1,521** — clears the 1,154 floor by 367. Overall 12W 2D 4L across 18 games. Max think time 4,099 ms (limit 10,000 ms) — no over-time losses.
+- Self-play (6 games each, alternating colours, own env harness): vs v6 **5W 1D 0L (5.5/6)** — 5 checkmates (121, 154, 139, 34, 105 plies) + 1 draw (repetition, 104 plies). vs v5 **5W 1D 0L (5.5/6)** — 5 checkmates (63, 113, 56, 117, 92 plies) + 1 draw (repetition, 52 plies).
+- Official practice trials (kit scorer, 3×6 games): trial-0 **1,364** (3W 1D 2L), trial-1 **1,654** (5W 0D 1L), trial-2 **1,545** (4W 1D 1L). Mean **1,521** — clears the 1,154 floor by 367. Overall 12W 2D 4L across 18 games. Max think time 4,099 ms (limit 10,000 ms) — no over-time losses.
 
 ## License
 
